@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registrar DT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+</head>
+
+<body>
+    <header th:replace="~{fragments/header.html :: header}"></header>
+    <main>
+        <section class="dts-container">
+            <h3>Lista de directores tecnicos</h3>
+            <div th:if="${dtList.size()==0}">
+                <p>No hay directores tecnicos cargados aun!</p>
+            </div>
+            <ul th:each="dt: ${dtList}">
+                <li style="display: flex;">
+                    <p th:text="${dt.id}"></p>
+                    <p th:text="${'. '+dt.name+' '+dt.surname}"></p>
+                    <p th:text="${' - '+dt.team.name}"></p>
+                </li>
+            </ul>
+        </section>
+        <section class="form-container">
+            <h3>Cargando Director Tecnico</h3>
+            <form action="/dt/guardar" method="post" enctype="multipart/form-data">
+                <input type="text" name="name" id="" placeholder="Nombre">
+                <input type="text" name="surname" id="" placeholder="Apellido">
+                <input type="file" name="file" id="">
+                <select name="idTeam" id="">
+                    <option value="0">Seleccionar Equipo</option>
+                    <option th:each="team: ${teamList}" th:value="${team.id}" th:text="${team.name}"></option>
+                </select>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section class="messages">
+            <div th:if="${error != null}" class="">
+                <div>
+                    <h5>Error!</h5>
+                    <p th:text="${error}"></p>
+                </div>
+            </div>
+            <div th:if="${exito != null}" class="">
+                <div>
+                    <h5>Exito!</h5>
+                    <p th:text="${exito}"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="rline"></div>
+    <footer th:replace="~{fragments/footer.html :: footer}"></footer>
+</body>
+
+</html>

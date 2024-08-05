@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title th:text="${team.name}"></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/team.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+</head>
+<body>
+    <header th:replace="~{fragments/header.html :: header}"></header>
+    <main>
+        <section class="team">
+            <div class="container" th:style="'--quantity:'+${playerList.size()}">
+                <div th:each="player, i: ${playerList}" class="cuadrado" th:style="'--position:'+${i.index}">
+                    <img id="fuego" th:src="@{/imagen/__${player.photo.id}__}" alt="">
+                    <div class="name">
+                        <h4 th:text="${player.surname}"></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <img th:src="@{/imagen/__${dt.photo.id}__}" alt="">
+                </div>
+                <p th:text="${dt.name} + ' ' + ${dt.surname} + ' - DT'"></p>
+            </div>
+        </section>
+        <section class="news">
+            <article class="main_new">
+                <img th:src="@{/imagen/__${playerList[1].photo.id}__}" alt="" style="aspect-ratio: 384/576; width: 70px;">
+            </article>
+        </section>
+        <div class="rline">
+        </div>
+    </main>
+    <footer th:replace="~{fragments/footer.html :: footer}"></footer>
+</body>
+</html>

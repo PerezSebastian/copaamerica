@@ -1,0 +1,70 @@
+
+.team{
+    background: url("../img/fondos/banderaArgentina.jpg") no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.container{
+    z-index: 0;
+    width: 80%;
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    transform-style: preserve-3d;
+    animation: pepe 30s linear infinite reverse;
+}
+.container:hover{
+    animation-play-state: paused!important;
+}
+.container:hover .cuadrado img{
+    filter: grayscale(1);
+}
+@keyframes pepe {
+    from{
+        transform: rotateX(-10deg) rotateY(0deg);
+    }to {
+        transform: rotateX(-10deg) rotateY(360deg);
+    }
+}
+.cuadrado{
+    width: 80px;
+    position: absolute;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360/var(--quantity)) * 1deg ))
+        translateZ(350px);
+    transition: transform 0.35s, filter 0.35s;
+}
+.cuadrado:hover{
+    z-index: 3;
+}
+.cuadrado:hover img{
+    filter: grayscale(0)!important;
+    transform: scale(1.2);
+}
+.cuadrado:hover h4{
+    transform: scale(1.2);
+}
+.cuadrado img{
+    width: 100%;
+    aspect-ratio: 384/576;
+    object-fit: cover;
+    transition: filter 0.35s, transform 0.35s;
+}
+
+.name h4{
+    text-align: center;
+}
+.content{
+    width: 50%;
+}
+
+.content img{
+    width: 100%;
+    aspect-ratio: 1084/584;
+    object-fit: cover;
+    z-index: 1;
+}

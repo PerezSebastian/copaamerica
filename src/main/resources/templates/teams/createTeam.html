@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registrar equipo | Copa America CONMEBOL</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <div class="logo-container"><a href="/"><img class="logo"
+                        src="../img/conmebol/logo-copa-america.png" alt=""></a></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Entradas</a></li>
+                <li><a href="">Calendario</a></li>
+                <li><a href="/equipos">Equipos</a></li>
+                <li><a href="">Superior POTM</a></li>
+                <li><a href="">Noticias</a></li>
+                <li><a href="">Estadios</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">Hospitalidad</a></li>
+                <li><a href="">Tienda oficial</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <h3>Cargando equipo</h3>
+            <form action="/equipos/guardar" method="post">
+                <input type="text" name="name" id="" placeholder="Nombre">
+                <input type="text" name="shortName" id="" placeholder="Codigo">
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section class="messages">
+            <div th:if="${error != null}" class="">
+                <div>
+                    <h5>Error!</h5>
+                    <p th:text="${error}"></p>
+                </div>
+            </div>
+            <div th:if="${exito != null}" class="">
+                <div>
+                    <h5>Exito!</h5>
+                    <p th:text="${exito}"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="rline">
+    </div>
+    <footer th:replace="~{fragments/footer.html :: footer}"></footer>
+</body>
+</html>

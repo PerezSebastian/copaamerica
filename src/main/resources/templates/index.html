@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home | Copa America CONMEBOL</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+
+<body>
+    <header th:replace="~{fragments/header.html :: header}"></header>
+    <main>
+        <section class="groups">
+            <div class="label-group">
+                <h2>Clasificación</h2>
+            </div>
+            <div class="clasificacion-titulos">
+                <div class="column">
+                    <h5>CUARTOS DE FINAL</h5>
+                </div>
+                <div class="column-space"></div>
+                <div class="column">
+                    <h5>SEMIFINAL</h5>
+                </div>
+                <div class="column-space"></div>
+                <div class="column">
+                    <h5>FINAL</h5>
+                </div>
+                <div class="column-space"></div>
+                <div class="column">
+                    <h5>SEMIFINAL</h5>
+                </div>
+                <div class="column-space"></div>
+                <div class="column">
+                    <h5>CUARTOS DE FINAL</h5>
+                </div>
+            </div>
+            <div class="llaves">
+                <div class="column">
+                    <div class="partidos-container">
+                        <div class="partido">
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/argentina.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Argentina</p>
+                                </div>
+                                <div class="goles">
+                                    <p>(4) 1</p>
+                                </div>
+                            </div>
+                            <div class="linr"></div>
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/ecuador.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Ecuador</p>
+                                </div>
+                                <div class="goles">
+                                    <p>(2) 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partido">
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/venezuela.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Venezuela</p>
+                                </div>
+                                <div class="goles">
+                                    <p>(3) 1</p>
+                                </div>
+                            </div>
+                            <div class="linr"></div>
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/canada.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Canada</p>
+                                </div>
+                                <div class="goles">
+                                    <p>(4) 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-space">
+                    <div class="column-space__">
+                        <div class="hline"></div>
+                        <div class="hline0"></div>
+                        <div class="hline"></div>
+                    </div>
+                    <div class="vline"></div>
+                    <div class="column-space__">
+                        <div class="hline"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="partidos-container">
+                        <div class="partido">
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/argentina.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Argentina</p>
+                                </div>
+                                <div class="goles">
+                                    <p>2</p>
+                                </div>
+                            </div>
+                            <div class="linr"></div>
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/canada.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Canada</p>
+                                </div>
+                                <div class="goles">
+                                    <p>0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-space">
+                    <div class="column-space__">
+                        <div class="hline"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="partidos-container">
+                        <div class="partido">
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/argentina.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Argentina</p>
+                                </div>
+                                <div class="goles">
+                                    <p>1</p>
+                                </div>
+                            </div>
+                            <div class="linr"></div>
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="img/conmebol/banderas/colombia.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Colombia</p>
+                                </div>
+                                <div class="goles">
+                                    <p>0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-space">
+                    <div class="column-space__">
+                        <div class="hline"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="partidos-container">
+                        <div class="partido">
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/uruguay.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Uruguay</p>
+                                </div>
+                                <div class="goles">
+                                    <p>0</p>
+                                </div>
+                            </div>
+                            <div class="linr"></div>
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/colombia.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Colombia</p>
+                                </div>
+                                <div class="goles">
+                                    <p>1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-space">
+                    <div class="column-space__">
+                        <div class="hline"></div>
+                    </div>
+                    <div class="vline"></div>
+                    <div class="column-space__">
+                        <div class="hline"></div>
+                        <div class="hline0"></div>
+                        <div class="hline"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="partidos-container">
+                        <div class="partido">
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/uruguay.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Uruguay</p>
+                                </div>
+                                <div class="goles">
+                                    <p>(4) 0</p>
+                                </div>
+                            </div>
+                            <div class="linr"></div>
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/brasil.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Brasil</p>
+                                </div>
+                                <div class="goles">
+                                    <p>(2) 0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partido">
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/colombia.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Colombia</p>
+                                </div>
+                                <div class="goles">
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            <div class="linr"></div>
+                            <div class="partido-equipo">
+                                <div class="team-logo"><img src="../img/conmebol/banderas/panama.jpg" alt=""></div>
+                                <div class="team-name">
+                                    <p>Panama</p>
+                                </div>
+                                <div class="goles">
+                                    <p>0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clasificacion-titulos">
+                <h5>TERCER PUESTO</h5>
+            </div>
+            <div class="llaves">
+                <div class="erp">
+                    <div class="partido">
+                        <div class="partido-equipo">
+                            <div class="team-logo"><img src="../img/conmebol/banderas/canada.jpg" alt=""></div>
+                            <div class="team-name">
+                                <p>Canadá</p>
+                            </div>
+                            <div class="goles">
+                                <p>(3) 2</p>
+                            </div>
+                        </div>
+                        <div class="linr"></div>
+                        <div class="partido-equipo">
+                            <div class="team-logo"><img src="../img/conmebol/banderas/uruguay.jpg" alt=""></div>
+                            <div class="team-name">
+                                <p>Uruguay</p>
+                            </div>
+                            <div class="goles">
+                                <p>(4) 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="label-group">
+                <h2>Grupos</h2>
+            </div>
+            <div class="cards-container">
+                <div class="group">
+                    <div class="group-name">
+                        <h6>Grupo A</h6>
+                        <p>PTS</p>
+                    </div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/argentina.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Argentina</p>
+                        </div>
+                        <div class="points">
+                            <p>9</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/canada.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Canada</p>
+                        </div>
+                        <div class="points">
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/chile.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Chile</p>
+                        </div>
+                        <div class="points">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/peru.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Peru</p>
+                        </div>
+                        <div class="points">
+                            <p>1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="group-name">
+                        <h6>Grupo B</h6>
+                        <p>PTS</p>
+                    </div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/venezuela.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Venezuela</p>
+                        </div>
+                        <div class="points">
+                            <p>9</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/ecuador.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Ecuador</p>
+                        </div>
+                        <div class="points">
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/mexico.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Mexico</p>
+                        </div>
+                        <div class="points">
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/jamaica.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Jamaica</p>
+                        </div>
+                        <div class="points">
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="group-name">
+                        <h6>Grupo C</h6>
+                        <p>PTS</p>
+                    </div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/uruguay.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Uruguay</p>
+                        </div>
+                        <div class="points">
+                            <p>9</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/panama.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Panama</p>
+                        </div>
+                        <div class="points">
+                            <p>6</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/estadosUnidos.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Estados Unidos</p>
+                        </div>
+                        <div class="points">
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/bolivia.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Bolivia</p>
+                        </div>
+                        <div class="points">
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="group-name">
+                        <h6>Grupo D</h6>
+                        <p>PTS</p>
+                    </div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/colombia.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Colombia</p>
+                        </div>
+                        <div class="points">
+                            <p>7</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/brasil.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Brasil</p>
+                        </div>
+                        <div class="points">
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/costaRica.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Costa Rica</p>
+                        </div>
+                        <div class="points">
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="linr"></div>
+                    <div class="row">
+                        <div class="team-logo"><img src="../img/conmebol/banderas/paraguay.jpg" alt=""></div>
+                        <div class="team-name">
+                            <p>Paraguay</p>
+                        </div>
+                        <div class="points">
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="rline">
+        </div>
+        <section class="news">
+            <div class="news-title">
+                <h2>Ultimas noticias</h2>
+                <a href="">Ver todos</a>
+            </div>
+            <div class="news-container">
+                <article class="main-new">
+                    <a href="">
+                        <div><img src="../img/news/main.jpg" alt=""></div>
+                        <h3>Situación de análisis VAR CONMEBOL Copa América™: Uruguay-Brasil</h3>
+                    </a>
+                </article>
+                <aside class="aside-news">
+                    <article class="aside-new">
+                        <a href="">
+                            <div class="new-img-container"><img src="../img/news/new1.jpg" alt=""></div>
+                            <div class="aside-new-titles">
+                                <p>COPA AMERICA 2024</p>
+                                <h3>Uruguay vence a Brasil en penales y está en Semifinales de la CONMEBOL Copa América™
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="aside-new">
+                        <a href="">
+                            <div class="new-img-container"><img src="../img/news/new2.jpg" alt=""></div>
+                            <div class="aside-new-titles">
+                                <p>COPA AMERICA</p>
+                                <h3>Exitosa implementación de sustitución adicional durante la CONMEBOL Copa América
+                                    2024™</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="aside-new">
+                        <a href="">
+                            <div class="new-img-container"><img src="../img/news/new3.jpg" alt=""></div>
+                            <div class="aside-new-titles">
+                                <p>COPA AMERICA</p>
+                                <h3>Uruguay-Brasil: el minuto a minuto en vivo</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="aside-new">
+                        <a href="">
+                            <div class="new-img-container"><img src="../img/news/new4.jpg" alt=""></div>
+                            <div class="aside-new-titles">
+                                <p>COPA AMERICA 2024</p>
+                                <h3>Brillante actuación de Colombia ante Panamá para asegurar el pase a Semifinales</h3>
+                            </div>
+                        </a>
+                    </article>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <div class="rline">
+    </div>
+    <footer th:replace="~{fragments/footer.html :: footer}"></footer>
+</body>
+
+</html>

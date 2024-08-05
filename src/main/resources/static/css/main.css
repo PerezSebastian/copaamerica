@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: bottom;
+}
+:root{
+    --cp: rgb(0,50,130);
+    --title: rgb(0,99,221);
+    --cs1: white;
+    --cs2: rgb(253,42,42);
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cp);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    z-index: 2;
+}
+.logo-container{
+    width: 150px;
+}
+.logo-container img{
+    aspect-ratio: 148/46;
+    width: 100%;
+}
+ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;;
+    gap: 15px;
+}
+li{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+nav ul li a{
+    color: var(--cs1);
+}
+nav ul li a:hover{
+    font-size: 20px;
+    text-underline-offset: 5px;
+    text-decoration: underline 2px solid var(--cs2);
+}
+
+/* main content */
+main{
+    padding-top: 95px;
+}
+.groups{
+    background: url(../img/conmebol/hero-bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 0.5rem 2rem 4rem 2rem;
+    color: var(--cs1);
+}
+.label-group{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 3rem;
+}
+.cards-container{
+    display: flex;
+    gap: 20px;
+}
+.group-name{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.group-name h6{
+    font-size: 1.2rem;
+}
+.group{
+    flex: 1;
+    border-radius: 15px;
+    padding: 1.4rem 1rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+}
+.row{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.linr{
+    background-color: rgba(253,42,42,0.2);
+    margin: 0.5rem 0;
+    height: 1px;
+    width: 100%;
+}
+.row p{
+    padding-right: 10px;
+}
+.team-logo img{
+    aspect-ratio: 1;
+    min-width: 34px;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: block;
+}
+.team-name{
+    flex: 1;
+}
+
+
+
+.llaves, .clasificacion-titulos{
+    display: flex;
+    justify-content: center;
+}
+.clasificacion-titulos{
+    margin-bottom: 1rem;
+}
+.column{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.column-space{
+    flex: 2;
+}
+.erp{
+    flex: 0.13;
+}
+h5{
+    text-align: center;
+    text-decoration: underline 1px solid var(--cs2);
+}
+h2{
+    font-size: 40px;
+    text-decoration: underline 3px solid var(--cs2);
+}
+.partidos-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+.partido{
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+}
+.partido-equipo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.column-space{
+    display: flex;
+
+}
+.column-space__{
+    flex: 1;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hline{
+    background-color: var(--cs1);
+    height: 2px;
+    width: 100%;
+}
+.hline0{
+    height: 2px;
+    width: 100%;
+}
+.vline{
+    background-color: var(--cs1);
+    width: 3px;
+    height: 58%;
+    margin: auto;
+}
+.rline{
+    background-color: var(--cs2);
+    height: 3px;
+    width: 100%;
+}
+
+
+.news{
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 1.5rem;
+}
+.news-title{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    color: var(--cp);
+}
+.news-container{
+    display: flex;
+    gap: 2rem;
+}
+.main-new{
+    width: 60%;
+}
+.main-new img, .aside-news img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+.aside-news .new-img-container{
+    width: 30%;
+}
+.aside-news .aside-new-titles{
+    width: 70%;
+}
+.aside-news{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside-new a{
+    display: flex;
+    gap: 14px;
+}
+.aside-new-titles{
+    padding-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.aside-new-titles h3{
+    font-size: 1.1rem;
+    color: black;
+}
+.aside-new-titles p{
+    color: var(--title);
+}
+.main-new h3{
+    font-size: 2rem;
+    color: black;
+}
+
+/* Footer */
+footer{
+    background: url(../img/conmebol/hero-bg.png) no-repeat center center;
+    background-size: cover;
+    color: var(--cs1);
+}
+.footer__sponsors{
+    width: 100%;
+}
+.sponsor-title{
+    text-align: center;
+}
+.sponsors-container{
+    display: flex;
+    position: relative;
+    height: 59px;
+    mask-image: linear-gradient(to right, transparent,#000 10% 90%,transparent);
+}
+.sponsors-container .sponsors{
+    position: absolute;
+    left: 100%;
+    animation: sliderSponsor 15s linear infinite;
+    animation-delay: calc( (15s / 11) * ( var(--p) - 1) );
+}
+.sponsors-container:hover .sponsors{
+    animation-play-state: paused;
+}
+@keyframes sliderSponsor {
+    from{
+        left: 100%;
+    }to{
+        left: calc( 128px * -1 );
+    }
+}
+
+.vibra-container{
+    display: flex;
+    justify-content: center;
+}
+.footer-copy{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer-copy__terminos{
+    display: flex;
+    gap: 1.5rem;
+}
+.footer-copy__terminos a{
+    color: var(--cs1);
+}
+.footer__teams-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__teams-container a{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__teams-container a div{
+    width: 32px;
+}
+.footer__teams-container a img{
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+    aspect-ratio: 1;
+}
+.footer__teams-container a p{
+    color: var(--cs1);
+}
+
+
+.teams-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.team-container{
+    min-width: 25%;
+    flex: 0.25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
