@@ -44,6 +44,7 @@ public class PhotoService {
         return resp.get();
     }
 
+    @Transactional
     public void update(MultipartFile file, String idPhoto) throws MiException {
         if (file == null) {
             throw new MiException("La imagen no puede ser nula");

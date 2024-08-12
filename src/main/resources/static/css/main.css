@@ -17,7 +17,7 @@ body{
     overflow-x: hidden;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr auto;
 }
 header{
     position: fixed;
@@ -27,7 +27,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 5%;
-    z-index: 2;
+    z-index: 99;
 }
 .logo-container{
     width: 150px;
@@ -65,7 +65,7 @@ main{
 .groups{
     background: url(../img/conmebol/hero-bg.png) no-repeat center center;
     background-size: cover;
-    padding: 0.5rem 2rem 4rem 2rem;
+    padding: 1.4rem 2rem 4rem 2rem;
     color: var(--cs1);
 }
 .label-group{

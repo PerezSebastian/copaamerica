@@ -27,7 +27,7 @@ public class PhotoController {
             Photo photo = ps.getOne(id);
             byte[] p = photo.getContent();
             HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.IMAGE_PNG);
+            headers.setContentType(MediaType.valueOf(photo.getMime()));
             return new ResponseEntity<>(p, headers, HttpStatus.OK);
         } catch (MiException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

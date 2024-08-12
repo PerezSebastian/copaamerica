@@ -1,0 +1,16 @@
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: var(--cp);
+    color: var(--cs1);
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.custom-file-upload:hover {
+    background-color: var(--title);
+}

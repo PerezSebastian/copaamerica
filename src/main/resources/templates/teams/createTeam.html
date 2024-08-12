@@ -8,25 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
 </head>
 <body>
-    <header>
-        <div class="logos">
-            <div class="logo-container"><a href="/"><img class="logo"
-                        src="../img/conmebol/logo-copa-america.png" alt=""></a></div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="">Entradas</a></li>
-                <li><a href="">Calendario</a></li>
-                <li><a href="/equipos">Equipos</a></li>
-                <li><a href="">Superior POTM</a></li>
-                <li><a href="">Noticias</a></li>
-                <li><a href="">Estadios</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">Hospitalidad</a></li>
-                <li><a href="">Tienda oficial</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header th:replace="~{fragments/header.html :: header}"></header>
     <main>
         <section class="form-container">
             <h3>Cargando equipo</h3>
@@ -51,8 +33,6 @@
             </div>
         </section>
     </main>
-    <div class="rline">
-    </div>
     <footer th:replace="~{fragments/footer.html :: footer}"></footer>
 </body>
 </html>

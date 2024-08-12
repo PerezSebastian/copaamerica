@@ -1,6 +1,7 @@
 package com.sperez.copaamerica.entities;
 
 import jakarta.persistence.Basic;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -17,6 +18,7 @@ public class Photo {
     private String name;
     @Lob
     @Basic(fetch = FetchType.LAZY)
+    @Column(name = "content", columnDefinition = "LONGBLOB")
     private byte[] content;
     public Photo() {
     }

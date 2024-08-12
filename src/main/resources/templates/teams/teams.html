@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://thymeleaf.org">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,6 +8,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
 </head>
+
 <body>
     <header th:replace="~{fragments/header.html :: header}"></header>
     <main>
@@ -19,17 +21,16 @@
             </div>
             <div th:each="aux: ${teamList}" class="team-container">
                 <a th:href="@{/equipos/__${aux.name}__}">
-                    <div>imagen</div>
+                    <div><img th:src="@{/imagen/__${aux.flag.id}__}" alt=""></div>
                     <div>
                         <h3 th:text="${aux.name}"></h3>
                         <h6 th:text="${aux.shortName}"></h6>
                     </div>
-                </a>  
+                </a>
             </div>
         </section>
     </main>
-    <div class="rline">
-    </div>
     <footer th:replace="~{fragments/footer.html :: footer}"></footer>
 </body>
+
 </html>
