@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ESTADIOS | Copa America 2024</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/stadiums.css'>
+</head>
+
+<body>
+    <header th:replace="~{fragments/header.html :: header}"></header>
+    <main>
+        <section class="stadiums-hero">
+            <div class="stadiums-hero__content">
+                <p class="stadiums-hero__kicker">CONMEBOL COPA AMERICA 2024</p>
+                <h1>Estadios de la competencia</h1>
+                <p class="stadiums-hero__description">
+                    Recorre las 14 sedes oficiales donde se jugo el torneo en Estados Unidos:
+                    estadios iconicos, arquitectura moderna y contexto de cada ciudad anfitriona.
+                </p>
+            </div>
+        </section>
+
+        <section class="stadiums-showcase">
+            <div class="stadiums-showcase__header">
+                <h2>14 estadios oficiales</h2>
+                <p>USA 2024</p>
+            </div>
+
+            <div class="stadiums-grid">
+                <article class="stadium-card stadium-card--final">
+                    <div class="stadium-card__media">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/Hard_Rock_Stadium.jpg" alt="Hard Rock Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Miami Gardens, FL</span>
+                        <span class="stadium-card__final-chip">Final</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>Hard Rock Stadium</h3>
+                        <p>Miami Gardens, Florida. Sede de la final, con gran presencia internacional y estructura abierta renovada.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Final</span>
+                            <span class="stadium-card__capacity">Capacidad: 65.000</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/MetLife_Stadium_2022.jpg" alt="MetLife Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">East Rutherford, NJ</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>MetLife Stadium</h3>
+                        <p>East Rutherford, New Jersey. Megaestadio del area metropolitana de Nueva York, sede de semifinal.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Semifinal</span>
+                            <span class="stadium-card__capacity">Capacidad: 82.500</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/Bank_of_America_Stadium.jpg" alt="Bank of America Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Charlotte, NC</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>Bank of America Stadium</h3>
+                        <p>Charlotte, North Carolina. Recinto urbano de gran capacidad, sede de semifinal y tercer puesto.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Semifinal</span>
+                            <span class="stadium-card__capacity">Capacidad: 74.000</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/AT%26T_Stadium.jpg" alt="AT&T Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Arlington, TX</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>AT&amp;T Stadium</h3>
+                        <p>Arlington, Texas. Escala monumental, cubierta retractil y una de las sedes de cuartos de final.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Cuartos</span>
+                            <span class="stadium-card__capacity">Capacidad: 80.000</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nrg_stadium.jpg" alt="NRG Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Houston, TX</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>NRG Stadium</h3>
+                        <p>Houston, Texas. Recinto cubierto multiproposito con gran capacidad y sede de cuartos de final.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Cuartos</span>
+                            <span class="stadium-card__capacity">Capacidad: 72.200</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/Allegiant_Stadium.jpg" alt="Allegiant Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Las Vegas, NV</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>Allegiant Stadium</h3>
+                        <p>Las Vegas, Nevada. Fachada negra de alto impacto visual y sede de cuartos de final.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Cuartos</span>
+                            <span class="stadium-card__capacity">Capacidad: 65.000</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/State_Farm_Stadium_in_Glendale_Arizona_(54265410742).jpg" alt="State Farm Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Glendale, AZ</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>State Farm Stadium</h3>
+                        <p>Glendale, Arizona. Estadio de identidad distintiva, con techo retratil y sede de cuartos de final.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Cuartos</span>
+                            <span class="stadium-card__capacity">Capacidad: 63.400</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz_Stadium,_Atlanta,_GA_(46558862035).jpg" alt="Mercedes-Benz Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Atlanta, GA</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>Mercedes-Benz Stadium</h3>
+                        <p>Atlanta, Georgia. Estadio de arquitectura futurista con techo retractil, sede del partido inaugural.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Apertura</span>
+                            <span class="stadium-card__capacity">Capacidad: 71.000</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Orlando_City_Stadium_(04-21-18)_1.jpg" alt="Inter&Co Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Orlando, FL</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>Inter&amp;Co Stadium</h3>
+                        <p>Orlando, Florida. Sede moderna de escala media, con diseno enfocado en visibilidad y cercania.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Fase de grupos</span>
+                            <span class="stadium-card__capacity">Capacidad: 25.500</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Levi%27s_Stadium.JPG" alt="Levi's Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Santa Clara, CA</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>Levi's Stadium</h3>
+                        <p>Santa Clara, California. Arquitectura contemporanea y enfoque sustentable en pleno Silicon Valley.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Fase de grupos</span>
+                            <span class="stadium-card__capacity">Capacidad: 68.500</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Q2_Stadium_Austin_Texas_2021.jpg" alt="Q2 Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Austin, TX</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>Q2 Stadium</h3>
+                        <p>Austin, Texas. Estadio moderno de nueva generacion, reconocido por su ambiente vibrante.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Fase de grupos</span>
+                            <span class="stadium-card__capacity">Capacidad: 20.700</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/SoFi_Stadium.jpg" alt="SoFi Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Inglewood, CA</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>SoFi Stadium</h3>
+                        <p>Inglewood, California. Complejo ultra moderno con cubierta translcida y propuesta arquitectonica de elite.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Fase de grupos</span>
+                            <span class="stadium-card__capacity">Capacidad: 70.200</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/Arrowhead_Stadium.jpg" alt="GEHA Field at Arrowhead Stadium" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Kansas City, MO</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>GEHA Field at Arrowhead Stadium</h3>
+                        <p>Kansas City, Missouri. Uno de los estadios mas emblematicos del pais, reconocido por su energia y tradicion.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Fase de grupos</span>
+                            <span class="stadium-card__capacity">Capacidad: 76.000</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="stadium-card">
+                    <div class="stadium-card__media">
+                    <img src="https://en.wikipedia.org/wiki/Special:FilePath/Children%27s_Mercy_Park.jpg" alt="Children's Mercy Park" loading="lazy" onerror="this.onerror=null;this.src='../img/conmebol/hero-bg.png';">
+                        <span class="stadium-card__location">Kansas City, KS</span>
+                    </div>
+                    <div class="stadium-card__body">
+                        <h3>Children's Mercy Park</h3>
+                        <p>Kansas City, Kansas. Estadio compacto y moderno, ideal para una experiencia cercana al campo.</p>
+                        <div class="stadium-card__meta">
+                            <span class="stadium-card__stage">Fase de grupos</span>
+                            <span class="stadium-card__capacity">Capacidad: 18.500</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer th:replace="~{fragments/footer.html :: footer}"></footer>
+</body>
+
+</html>

@@ -12,4 +12,14 @@ public class MainController {
     public String index(){
         return "index";
     }
+
+    @GetMapping("/estadios")
+    public String stadiums() {
+        return "stadiums/stadiums";
+    }
+
+    @GetMapping("/calendario")
+    public String calendar() {
+        return "calendar/calendar";
+    }
 }

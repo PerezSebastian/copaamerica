@@ -7,25 +7,48 @@
     <title>EQUIPOS | Copa America CONMEBOL</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/teams.css'>
 </head>
 
 <body>
     <header th:replace="~{fragments/header.html :: header}"></header>
     <main>
-        <section class="main-title">
-            <h1>Equipos</h1>
-        </section>
-        <section class="teams-container">
-            <div th:if="${teamList.size()==0}">
-                <p>No hay equipos cargados aun!</p>
+        <section class="teams-hero">
+            <div class="teams-hero__content">
+                <p class="teams-hero__kicker">CONMEBOL COPA AMERICA 2024</p>
+                <h1>Selecciona una seleccion</h1>
+                <p class="teams-hero__description">
+                    Explora los equipos que participaron en la edicion 2024 y accede a sus planteles,
+                    directores tecnicos y estadisticas principales.
+                </p>
             </div>
-            <div th:each="aux: ${teamList}" class="team-container">
-                <a th:href="@{/equipos/__${aux.name}__}">
-                    <div><img th:src="@{/imagen/__${aux.flag.id}__}" alt=""></div>
-                    <div>
-                        <h3 th:text="${aux.name}"></h3>
-                        <h6 th:text="${aux.shortName}"></h6>
+        </section>
+
+        <section class="teams-showcase">
+            <div class="teams-showcase__header">
+                <h2>Equipos participantes</h2>
+                <p th:text="${teamList.size()} + ' equipos cargados'"></p>
+            </div>
+
+            <div th:if="${teamList.size()==0}" class="teams-empty">
+                <h3>No hay equipos cargados todavia</h3>
+                <p>
+                    Puedes registrarlos desde la seccion administrativa para comenzar a completar la competencia.
+                </p>
+            </div>
+
+            <div th:if="${teamList.size()>0}" class="teams-grid">
+                <a th:each="aux: ${teamList}" class="team-card" th:href="@{/equipos/__${aux.name}__}">
+                    <div class="team-card__badge" th:text="${aux.shortName}"></div>
+                    <div class="team-card__flag-frame">
+                        <img th:if="${aux.flag != null}" th:src="@{/imagen/__${aux.flag.id}__}" th:alt="${'Bandera de ' + aux.name}">
+                        <img th:if="${aux.flag == null}" src="../img/conmebol/logo-vertical.png" th:alt="${'Escudo de ' + aux.name}">
                     </div>
+                    <div class="team-card__meta">
+                        <h3 th:text="${aux.name}"></h3>
+                        <p>Ver plantilla completa</p>
+                    </div>
+                    <span class="team-card__arrow">Ver equipo</span>
                 </a>
             </div>
         </section>
